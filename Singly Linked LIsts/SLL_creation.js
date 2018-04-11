@@ -3,11 +3,6 @@ function Node(val) {
     this.next = null;
 }
 
-
-nn = new Node(15)
-// console.log(nn)
-// console.log(nn.val)
-
 function SinglyList() {
     this.head = null;
 }
@@ -23,7 +18,7 @@ SinglyList.prototype.add = function(val) {
 SinglyList.prototype.print_data = function() {
     current = this.head
     while(current != null) {
-        console.log(current.val)
+        // console.log(current.val)
         console.log(current.next)
         current = current.next
 
