@@ -26,12 +26,22 @@ SinglyList.prototype.print_data = function() {
 }
 
 for(var i = 0; i <= 5; i++) {
-    var random_num = Math.floor(Math.random() * 1000); 
+    var random_num = Math.floor(Math.random() * 2); 
     SinglyList.prototype.add(random_num)
 
 }
-
-
 SinglyList.prototype.print_data()
+
+function contains(SinglyList, val) {
+    current = this.head 
+    while(current.next != undefined) {
+        if(current.val = val) {
+            return true
+        }
+        current = current.next 
+    }
+    return false
+}
+contains(SinglyList, 1)
 
 
